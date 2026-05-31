@@ -211,7 +211,7 @@ public class Benchmark {
             System.out.println("\n[AegisKV Benchmark Progress]");
             System.out.printf("Elapsed Time: %ds / %ds\n", elapsed, DURATION_SEC);
             System.out.printf("Current Throughput: %,d ops/sec\n", opsPerSec);
-            System.out.printf("P50 Latency: %d \u03BCs | P99 Latency: %d \u03BCs\n", p50, p99);
+            System.out.printf("P50 Latency: %d micros | P99 Latency: %d micros\n", p50, p99);
             System.out.printf("Active Client Threads: %d\n", activeThreads.get());
         }
     }
@@ -274,12 +274,12 @@ public class Benchmark {
         System.out.printf("\n--- AegisKV Benchmark Results ---\n");
         System.out.printf("Total Operations: %,d\n", totalOpsCount);
         System.out.printf("Average Throughput: %,.2f ops/sec\n", totalThroughput);
-        System.out.println("--- Latency Percentiles (\u03BCs) ---");
-        System.out.printf("Min:    %d \u03BCs\n", min);
-        System.out.printf("P50:    %d \u03BCs\n", p50);
-        System.out.printf("P90:    %d \u03BCs\n", p90);
-        System.out.printf("P99:    %d \u03BCs\n", p99);
-        System.out.printf("P99.9:  %d \u03BCs\n", p999);
-        System.out.printf("Max:    %d \u03BCs\n", max);
+        System.out.println("--- Latency Percentiles (micros) ---");
+        System.out.printf("Min:    %d micros\n", min);
+        System.out.printf("P50:    %d micros\n", p50);
+        System.out.printf("P90:    %d micros\n", p90);
+        System.out.printf("P99:    %d micros\n", p99);
+        System.out.printf("P99.9:  %d micros\n", p999);
+        System.out.printf("Max:    %d micros\n", max);
     }
 }
