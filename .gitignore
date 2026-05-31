@@ -1,0 +1,24 @@
+# Compiled output
+/out/
+*.class
+
+# Node Data & Write-Ahead Logs
+/data/
+*.wal
+
+# Temporary / Scratch Files
+sources.txt
+*.log
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Visual Studio Code
+.vscode/
+
+# Eclipse
+.classpath
+.project
+.settings/
